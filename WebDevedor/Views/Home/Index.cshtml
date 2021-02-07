@@ -1,0 +1,53 @@
+﻿@model IEnumerable<ContosoUniversity.Models.Department>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<table class="table">
+    <tr>
+        <th>CodigoDevedor</th>
+        <th>CodigoBanco</th>
+        <th>CodigoInterno</th>
+        <th>NomeCredor</th>
+        <th>NumeroTitulo</th>
+        <th>Parcela</th>
+        <th>NomeDevedor</th>
+        <th>CPF_CNPJ_Devedor</th>
+        <th>ValorTitulo</th>
+        <th>DataEmissao</th>
+        <th>DataVencimento</th>
+        <th>DataVencimento</th>
+        <th>Valor1aParcela</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+    <tr>
+        <td>@Html.Encode(item.CodigoDevedor)</td>
+        <td>@Html.Encode(item.CodigoBanco)</td>
+        <td>@Html.Encode(item.CodigoInterno)</td>
+        <td>@Html.Encode(item.NomeCredor)</td>
+        <td>@Html.Encode(item.NumeroTitulo)</td>
+        <td>@Html.Encode(item.Parcela)</td>
+        <td>@Html.Encode(item.NomeDevedor)</td>
+        <td>@Html.Encode(item.CPF_CNPJ_Devedor)</td>
+        <td>@Html.Encode(item.ValorTitulo)</td>
+        <td>@Html.Encode(item.DataEmissao)</td>
+        <td>@Html.Encode(item.DataVencimento)</td>
+        <td>@Html.Encode(item.DataVencimento)</td>
+        <td>@Html.Encode(item.Valor1aParcela)</td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.CodigoDevedor }) |
+            @Html.ActionLink("Details", "Details", new { id = item.CodigoDevedor }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.CodigoDevedor })
+        </td>
+    </tr>
+    }
+</table>

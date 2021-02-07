@@ -1,0 +1,87 @@
+﻿@model IEnumerable<LibraryDesafioAPI.Classes.Devedor>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Devedores</h2>
+
+    <p>
+        @Html.ActionLink("Adicionar", "Create", null, new { @class = "btn btn-primary" })
+    </p>
+    <table class="table table-striped table-bordered table-hover nowrap">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CodigoBanco)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CodigoInterno)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NomeCredor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumeroTitulo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Parcela)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NomeDevedor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CPF_CNPJ_Devedor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ValorTitulo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataEmissao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataVencimento)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CodigoBanco)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CodigoInterno)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NomeCredor)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NumeroTitulo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Parcela)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NomeDevedor)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CPF_CNPJ_Devedor)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ValorTitulo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DataEmissao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DataVencimento)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.CodigoDevedor }, new { @class = "btn btn-primary btn-desafioAPI" })
+                    @Html.ActionLink("Delete", "Delete", new { id = item.CodigoDevedor }, new { @class = "btn btn-danger btn-desafioAPI" })
+                </td>
+            </tr>
+        }
+
+    </table>

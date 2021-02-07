@@ -1,0 +1,194 @@
+﻿@model LibraryDesafioAPI.Classes.Devedor
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Devedor</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CodigoBanco)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CodigoBanco)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CodigoInterno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CodigoInterno)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeCredor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomeCredor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeroTitulo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumeroTitulo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Parcela)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Parcela)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeDevedor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomeDevedor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CPF_CNPJ_Devedor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CPF_CNPJ_Devedor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Endereco_Devedor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Endereco_Devedor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Bairro_Devedor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bairro_Devedor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cidade_Devedor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cidade_Devedor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CEP_Devedor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CEP_Devedor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UF_Devedor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UF_Devedor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cidade_Praca_Pagamento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cidade_Praca_Pagamento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UF_Praca_Pagamento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UF_Praca_Pagamento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ValorTitulo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ValorTitulo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ValorProtestar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ValorProtestar)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataEmissao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataEmissao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataVencimento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataVencimento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoDocumento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoDocumento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Operacao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Operacao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Valor1aParcela)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Valor1aParcela)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QtdeParcelaContrato)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QtdeParcelaContrato)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CodigoDevedor }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

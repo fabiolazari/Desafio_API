@@ -1,0 +1,204 @@
+﻿@model LibraryDesafioAPI.Classes.Devedor
+
+@{
+    ViewBag.Title = "Inclusão";
+}
+
+<h2>Inclusão Devedor!</h2>
+
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+<div class="form-horizontal">
+    <div>
+        @Html.ActionLink("Voltar", "Index", null, new { @class = "btn btn-default" })
+    </div>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+        @Html.LabelFor(model => model.CodigoBanco, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.CodigoBanco, new { htmlAttributes = new { @class = "form-control Cmp-CodigoBanco" } })
+            @Html.ValidationMessageFor(model => model.CodigoBanco, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.CodigoInterno, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.CodigoInterno, new { htmlAttributes = new { @class = "form-control Cmp-CodigoInterno" } })
+            @Html.ValidationMessageFor(model => model.CodigoInterno, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.NomeCredor, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.NomeCredor, new { htmlAttributes = new { @class = "form-control Cmp-NomeCredor" } })
+            @Html.ValidationMessageFor(model => model.NomeCredor, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.NumeroTitulo, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.NumeroTitulo, new { htmlAttributes = new { @class = "form-control Cmp-NumeroTitulo" } })
+            @Html.ValidationMessageFor(model => model.NumeroTitulo, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Parcela, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Parcela, new { htmlAttributes = new { @class = "form-control Cmp-Parcela" } })
+            @Html.ValidationMessageFor(model => model.Parcela, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.NomeDevedor, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.NomeDevedor, new { htmlAttributes = new { @class = "form-control Cmp-NomeDevedor" } })
+            @Html.ValidationMessageFor(model => model.NomeDevedor, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.CPF_CNPJ_Devedor, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.CPF_CNPJ_Devedor, new { htmlAttributes = new { @class = "form-control Cmp-CPF_CNPJ_Devedor" } })
+            @Html.ValidationMessageFor(model => model.CPF_CNPJ_Devedor, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Endereco_Devedor, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Endereco_Devedor, new { htmlAttributes = new { @class = "form-control Cmp-Endereco_Devedor" } })
+            @Html.ValidationMessageFor(model => model.Endereco_Devedor, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Bairro_Devedor, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Bairro_Devedor, new { htmlAttributes = new { @class = "form-control Cmp-Bairro_Devedor" } })
+            @Html.ValidationMessageFor(model => model.Bairro_Devedor, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Cidade_Devedor, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Cidade_Devedor, new { htmlAttributes = new { @class = "form-control Cmp-Cidade_Devedor" } })
+            @Html.ValidationMessageFor(model => model.Cidade_Devedor, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.CEP_Devedor, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.CEP_Devedor, new { htmlAttributes = new { @class = "form-control Cmp-CEP_Devedor" } })
+            @Html.ValidationMessageFor(model => model.CEP_Devedor, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.UF_Devedor, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.UF_Devedor, new { htmlAttributes = new { @class = "form-control Cmp-UF_Devedor" } })
+            @Html.ValidationMessageFor(model => model.UF_Devedor, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Cidade_Praca_Pagamento, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Cidade_Praca_Pagamento, new { htmlAttributes = new { @class = "form-control Cmp-Cidade_Praca_Pagamento" } })
+            @Html.ValidationMessageFor(model => model.Cidade_Praca_Pagamento, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.UF_Praca_Pagamento, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.UF_Praca_Pagamento, new { htmlAttributes = new { @class = "form-control Cmp-UF_Praca_Pagamento" } })
+            @Html.ValidationMessageFor(model => model.UF_Praca_Pagamento, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.ValorTitulo, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.ValorTitulo, "{0:0.00}", new { @class = "form-control Cmp-ValorTitulo" })
+            @Html.ValidationMessageFor(model => model.ValorTitulo, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.ValorProtestar, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.ValorProtestar, "{0:0.00}", new { @class = "form-control Cmp-ValorProtestar" })
+            @Html.ValidationMessageFor(model => model.ValorProtestar, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.DataEmissao, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.DataEmissao, "{0:yyyy-MM-dd}", new { @class = "form-control Cmp-DataEmissao", @type = "date" })
+            @Html.ValidationMessageFor(model => model.DataEmissao, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.DataVencimento, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.DataVencimento, "{0:yyyy-MM-dd}", new { @class = "form-control Cmp-DataVencimento", @type = "date" })
+            @Html.ValidationMessageFor(model => model.DataVencimento, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.TipoDocumento, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.TipoDocumento, new { htmlAttributes = new { @class = "form-control Cmp-TipoDocumento" } })
+            @Html.ValidationMessageFor(model => model.TipoDocumento, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Operacao, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Operacao, new { htmlAttributes = new { @class = "form-control Cmp-Operacao" } })
+            @Html.ValidationMessageFor(model => model.Operacao, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Valor1aParcela, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.Valor1aParcela, "{0:0.00}", new { @class = "form-control Cmp-Valor1aParcela" })
+            @Html.ValidationMessageFor(model => model.Valor1aParcela, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.QtdeParcelaContrato, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.QtdeParcelaContrato, new { htmlAttributes = new { @class = "form-control Cmp-QtdeParcelaContrato" } })
+            @Html.ValidationMessageFor(model => model.QtdeParcelaContrato, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Gravar" class="btn btn-primary" />
+            @Html.ActionLink("Voltar", "Index", null, new { @class = "btn btn-default" })
+        </div>
+    </div>
+</div>
+}
+

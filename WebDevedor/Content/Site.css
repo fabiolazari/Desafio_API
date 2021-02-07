@@ -1,0 +1,132 @@
+﻿body {
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+
+.body-content {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 97%;
+}
+
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+input,
+select,
+textarea {
+    max-width: 500px;
+}
+
+.containerDesafioAPI {
+    width: 100%;
+    margin-left: 20px;
+}
+
+.btn-desafioAPI {
+    display: inline-table;
+    width: 50px;
+    text-align: center;
+}
+
+.nav-desafioAPI {
+    height: 80px;
+    background-color: #1c7979;
+}
+
+.img-desafioAPI {
+    float: left;
+    width: 74px;
+    height: 74px;
+    margin-top: 3px;
+    border: solid;
+    background: url('../images/favicon.jpg') no-repeat center;
+}
+
+.Cmp-CodigoBanco {
+    width: 100px;
+}
+
+.Cmp-CodigoInterno {
+    width: 150px;
+}
+
+.Cmp-NomeCredor {
+    width: 500px;
+}
+.Cmp-NumeroTitulo {
+    width: 150px;
+}
+
+.Cmp-Parcela {
+    width: 80px;
+}
+
+.Cmp-NomeDevedor {
+    width: 500px;
+}
+
+.Cmp-CPF_CNPJ_Devedor {
+    width: 200px;
+}
+
+.Cmp-Endereco_Devedor {
+    width: 500px;
+}
+
+.Cmp-Bairro_Devedor {
+    width: 300px;
+}
+
+.Cmp-Cidade_Devedor {
+    width: 300px;
+}
+
+.Cmp-CEP_Devedor {
+    width: 150px;
+}
+
+.Cmp-UF_Devedor {
+    width: 80px;
+}
+
+.Cmp-Cidade_Praca_Pagamento {
+    width: 300px;
+}
+
+.Cmp-UF_Praca_Pagamento {
+    width: 80px;
+}
+
+.Cmp-ValorTitulo {
+    width: 200px;
+}
+
+.Cmp-ValorProtestar {
+    width: 200px;
+}
+
+.Cmp-DataEmissao {
+    width: 180px;
+}
+
+.Cmp-DataVencimento {
+    width: 180px;
+}
+
+.Cmp-TipoDocumento {
+    width: 100px;
+}
+
+.Cmp-Operacao {
+    width: 100px;
+}
+
+.Cmp-Valor1aParcela {
+    width: 200px;
+}
+
+.Cmp-QtdeParcelaContrato {
+    width: 80px;
+}

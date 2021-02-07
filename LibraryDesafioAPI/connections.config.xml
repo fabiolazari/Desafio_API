@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<connectionStrings>
+  <add name="MsConcilig"
+   providerName="System.Data.ProviderName"
+   connectionString="Server=.\SQLEXPRESS;Database=desafio;User ID=sa;Password=123456"/>
+</connectionStrings>
